@@ -1,0 +1,378 @@
+body {
+  background-color: #fff;
+}
+.help-wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.help-layout {
+  margin: 20px 0;
+  padding: 20px;
+  width: calc(100% - 40px);
+}
+
+.help-header {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+.help-header.admin {
+  align-items: flex-start;
+}
+
+.help-list {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.search-wrapper {
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  margin: 14px 16px;
+  width: calc(100% - 60px);
+  max-width: 400px;
+}
+
+.pac-card {
+  margin: 10px 10px 0 0;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  font-family: Roboto;
+}
+
+.pac-container {
+  z-index: 1300;
+  padding: 12px;
+  margin: 8px 0;
+  z-index: 1300;
+  border-radius: 12px;
+}
+
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
+
+.pac-controls label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 8px 16px;
+  text-overflow: ellipsis;
+  border-radius: 24px;
+  border-color: transparent;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+  transition: box-shadow 0.6s ease;
+}
+
+.grayscale {
+  filter: grayscale(1);
+}
+
+#pac-input:focus {
+  box-shadow: rgba(0, 0, 0, 0.38) 0px 1px 14px -1px;
+}
+
+.pac-item {
+  border-top: none;
+  border-bottom: 1px solid #eee;
+  margin: 8px 0;
+}
+
+form.help-register {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  justify-content: space-evenly;
+}
+form.help-register > * {
+  margin: 4px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+form.help-register > .error {
+  color: red;
+}
+
+.dialog-paper {
+  padding: 16px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.dialog-subtext {
+  width: 80%;
+  margin: auto !important;
+  text-align: center;
+}
+
+.help-tool {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.help-list .help-card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.help-card:hover,
+.elevated-paper:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-left: 4px solid #3f51b529;
+}
+
+.covid-logo {
+  background-image: url("./static/link_aid.svg");
+  width: 64px;
+  height: 81px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.covid-logo.small {
+  width: 100px;
+  height: 48px;
+}
+
+.covid-logo.margin {
+  margin: 20px 40px;
+}
+
+.covid-logo.center {
+  margin: auto;
+}
+
+.covid-logo.spaced {
+  margin-top: 16px;
+}
+
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.header-location {
+  text-align: center;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+ul.menu {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  margin: 0;
+  padding: 8px;
+  flex-wrap: wrap;
+  user-select: none;
+}
+
+.menu li {
+  margin: 8px 16px;
+  cursor: pointer;
+  border-left: 1px solid #eee;
+  padding-left: 8px;
+}
+
+.menu li.disabled{
+  pointer-events: none;
+  color: #eee;
+}
+
+.menu li:hover, .menu li.active {
+  color: #3f51b5;
+}
+
+.loader{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .menu li.active {
+  color: #555;
+  border-bottom: 1px solid #eee;
+} */
+
+.header-location .btn {
+  flex-direction: column;
+}
+
+.header-location .location{
+  color: #777;
+}
+
+.info-section {
+  padding: 20px;
+}
+
+.stats-wrapper {
+  max-width: 600px;
+  width: 100%;
+  padding: 8px;
+}
+
+.stats-wrapper.card {
+  padding: 8px;
+  margin: 20px;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stats-header {
+  padding: 0 8px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+}
+
+.group .title {
+  font-size: 10px !important;
+}
+
+.supertext {
+  position: relative !important;
+  margin-top: 8px !important;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.supertext .subtext {
+  position: absolute;
+  top: -14px;
+}
+
+.subtext {
+  line-height: 1 !important;
+}
+
+.group {
+  padding: 8px 8px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.death,
+.death h6,
+.death .subtext,
+.death .title {
+  color: #d32f2f !important;
+}
+
+.critical,
+.critical .subtext,
+.critical .title,
+.critical h6 {
+  color: #ff5722 !important;
+}
+
+.recovered,
+.recovered .subtitle,
+.recovered .title,
+.recovered h6 {
+  color: green !important;
+}
+
+.my-map-wrapper:not(.fullscreen) {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.marker {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: -10px;
+  top: -10px;
+  border: 1px solid blue;
+  background: red;
+  color: yellow;
+}
+.marker:hover {
+  background: blue;
+}
+
+.set-location {
+  background-color: #fff !important;
+  position: absolute !important;
+  z-index: 100;
+  top: 14px;
+  font-size: 12px !important;
+  left: 12px;
+}
+@media screen and (min-width: 600px) {
+  .help-layout {
+    min-width: 600px;
+    width: 600px;
+    padding: 10px 60px 40px;
+  }
+}

@@ -1,0 +1,175 @@
+.corona-bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.answer-container {
+  display: -webkit-box;
+  display: flex;
+  padding: 16px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+span.highlight-answer {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.faq-btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.search {
+  width: 100%;
+}
+
+.corona-bg {
+  background-image: url("http://pngimg.com/uploads/coronavirus/coronavirus_PNG47.png");
+  background-attachment: fixed;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  -webkit-animation: move 15s ease-in-out infinite;
+  animation: move 100s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.corona-bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.layout-center {
+  display: flex;
+  flex: 0 1;
+  justify-content: center;
+  padding: 0px 20px 0px;
+  flex-direction: column;
+  align-items: center;
+  background: #fffffff0;
+}
+
+.answer-container {
+  display: -webkit-box;
+  display: flex;
+  padding: 16px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+.answer {
+  top: 0;
+  margin: auto;
+  max-width: 600px;
+  padding: 12px;
+}
+
+span.highlight-answer {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.faq-btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 16px;
+}
+.faq-btn.below-search-bar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 20px 4px;
+  max-width: 600px;
+  flex-direction: row-reverse;
+  height: 100%;
+}
+
+.header {
+  border-bottom: 2px solid #929ddc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.header-wrapper {
+  background: #fffffff0;
+}
+
+.header.wrapped {
+  max-width: 600px;
+  margin: auto;
+}
+
+.search {
+  width: 100%;
+}
+
+.corona-bg {
+  background-image: url("./static/coronavirus_PNG47.png");
+  background-attachment: fixed;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  -webkit-animation: move 15s ease-in-out infinite;
+  animation: move 100s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.card-transparent {
+  background-color: #fffffff5 !important;
+}
+
+footer {
+  text-align: center;
+}
+footer .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-top: 1px solid #eee;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+footer a {
+  cursor: pointer;
+}
+
+.faq-title,
+.answer-title {
+  padding-bottom: 16px;
+}
+
+.contributers {
+  border-right: 2px solid #eee;
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+  padding: 8px 11px;
+  border-left: 2px solid #eee;
+  align-items: end;
+}
+
+.datasource {
+  border-left: 2px solid #eee;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 8px 34px 8px 12px;
+  border-right: 2px solid #eee;
+  align-items: end;
+}
